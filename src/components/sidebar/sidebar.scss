@@ -1,0 +1,68 @@
+@import './../../assets/scss/colors.scss';
+
+.sidebar{
+
+    &--size{
+        width: 300px;
+        height: 100%;
+    }
+
+    &--theme{
+        background-color: #FFD400;
+    }
+
+    &__header{
+
+        &--theme{
+            background-color: $blue;
+        }
+
+        &--size{
+            height: 20%;
+        }
+    }
+
+    &__options{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        padding: 30px 0;
+        box-sizing: content-box;
+
+        &--size{
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    &__option{
+        font-size: 18px;
+        padding: 10px 20px;
+        cursor: pointer;
+        box-sizing: border-box;
+
+        &:hover{
+            background-color: $darkyellow;
+        }
+
+        &--theme{
+
+        }
+
+        &--size{
+            width: 100%;
+        }
+
+        &--active{
+            background-color: $darkyellow;
+        }
+    }
+
+    &__link{
+        width: 100%;
+        height: 100px;
+        text-decoration: none;
+        color: black;
+    }
+}
