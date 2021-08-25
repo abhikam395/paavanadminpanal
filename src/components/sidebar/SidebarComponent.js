@@ -20,7 +20,8 @@ class SidebarComponent extends Component{
 
     onOptionSelected(id, path){
         let {history} = this.props;
-        history.push(path);
+        history.replace(path);
+        console.log(history)
         this.setState({activeOptionId: id});
     }
 

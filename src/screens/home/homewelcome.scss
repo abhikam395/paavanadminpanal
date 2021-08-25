@@ -1,0 +1,18 @@
+.homewelcome{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &--size{
+        height: 100%;
+        width: 100%;
+    }
+
+    // &--theme{
+    //     background-color: red;
+    // }
+
+    &__title{
+        font-size: 54px;
+    }
+}

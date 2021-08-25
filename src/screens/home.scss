@@ -11,6 +11,7 @@
     }
 
     &__container{
+        overflow: scroll;
 
         &--size{
             width: 100%;

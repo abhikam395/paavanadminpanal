@@ -1,6 +1,9 @@
 @import './../../assets/scss/colors.scss';
 
 .sidebar{
+    position: sticky;
+    left: 0;
+    top: 0;
 
     &--size{
         width: 300px;
@@ -31,7 +34,6 @@
         box-sizing: content-box;
 
         &--size{
-            height: 100%;
             width: 100%;
         }
     }
@@ -57,12 +59,5 @@
         &--active{
             background-color: $darkyellow;
         }
-    }
-
-    &__link{
-        width: 100%;
-        height: 100px;
-        text-decoration: none;
-        color: black;
     }
 }

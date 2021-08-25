@@ -1,0 +1,29 @@
+@import './../../assets/scss/colors.scss';
+
+.homeassignscore{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px 40px;
+
+    &--size{
+        width: 100%;
+        height: 100%;
+    }
+
+    &__title{
+        font-size: 26px;
+    }
+
+    &__save-button{
+        border: none;
+        background-color: $blue;
+        color: white;
+        min-height: 35px;
+        width: 130px;
+        font-size: 14px;
+        border-radius: 5px;
+        align-self: center;
+        cursor: pointer;
+    }
+}
