@@ -8,8 +8,6 @@ export default class HomeArrangeDataScreen extends Component{
             <section className="homearrangedata homearrangedata--size homearrangedata--theme">
                 <h1 className="homearrangedata__title">Arrange App Data</h1>
                 <HomeVideosModuleComponent title="Home Screen"/>
-                <HomeVideosModuleComponent title="Channel Scores"/>
-                <HomeVideosModuleComponent title="God Scores"/>
                 <button className="homearrangedata__save-button">Save</button>
             </section>
         )

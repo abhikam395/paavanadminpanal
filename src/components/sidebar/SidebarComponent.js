@@ -6,7 +6,8 @@ const options = [
     {id: 1, name: 'Push Videos', path: '/videos'},
     {id: 2, name: 'Assign Entitiy Scores', path: '/assign-score'},
     {id: 3, name: 'Arrange App Data', path: '/arrange-data'},
-    {id: 4, name: 'Log out', path: '/login'},
+    {id: 4, name: 'Configure Home Page', path: '/home-config'},
+    {id: 5, name: 'Log out', path: '/login'},
 ]
 
 class SidebarComponent extends Component{

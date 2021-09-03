@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
 import { MdMessage } from 'react-icons/md';
 import {IoKeySharp} from 'react-icons/io5';
+import {withRouter} from 'react-router-dom';
 import './login.scss';
 
-export default class LoginScreen extends Component{
+class LoginScreen extends Component{
 
     constructor(){
         super();
@@ -11,7 +12,9 @@ export default class LoginScreen extends Component{
     }
 
     onButtonClick(event){
+        let {history} = this.props;
         event.preventDefault();
+        history.replace('/');
     }
 
     render(){
@@ -48,3 +51,5 @@ export default class LoginScreen extends Component{
         )
     }
 }
+
+export default withRouter(LoginScreen);
