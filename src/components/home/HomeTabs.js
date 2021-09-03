@@ -11,18 +11,16 @@ export default class HomeTabs extends Component{
 
     constructor(){
         super();
-        this.state = {
-            currentTab: TABS.MODULES
-        }
         this.selectTab = this.selectTab.bind(this);
     }
 
     selectTab(name){
-        this.setState({currentTab: name});
+        let {changeTab} = this.props;
+        changeTab(name);
     }
 
     render(){
-        let {currentTab} = this.state;
+        let {currentTab} = this.props;
         return (
             <section className="hometabs hometabs--size">
                 <article className="hometabs__header">

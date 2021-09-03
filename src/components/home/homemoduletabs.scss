@@ -1,0 +1,35 @@
+@import './../../assets/scss/colors.scss';
+
+.homemoduletabs{
+
+    &--size{
+        height: 100%;
+        width: 100%;
+    }
+
+    &__header{
+        height: 50px;
+        display: flex;
+        align-items: center;
+        border-bottom: 3px solid $darkblue;
+    }
+
+    &__item{
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        background-color: #f6f6f6;
+        height: 100%;
+
+        &-title{
+            font-size: 17px;
+            color: $darkblue;
+        }
+
+        &--active{
+            background-color: $yellow;
+        }
+    }
+}
